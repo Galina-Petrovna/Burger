@@ -24,7 +24,7 @@ const productSlice = createSlice({
         .addCase(productRequestAsync.fulfilled, (state, action) => {
             state.error = '';
            state.products = action.payload;
-        } )
+        })
         .addCase(productRequestAsync.rejected, (state, action) => {
             state.error = action.payload.error
         })
