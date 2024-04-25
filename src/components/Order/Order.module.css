@@ -1,5 +1,8 @@
 .order {
-    position: relative;
+    position: absolute;
+    align-items: center;
+    bottom: 0;
+    width: 170px;
   }
   
 .wrapper {
@@ -55,9 +58,9 @@
     background: #F2F2F3;
     border-radius: 6px;
 }
-  
-.wrap_list {
-    display: none;
+
+.close {
+  display: none;
 }
   
 .order_open .wrap_list {
@@ -126,7 +129,7 @@
   
 @media (min-width: 768px) {
   .order {
-    width: 145px;
+    width: 300px;
     transition: width 0.06s ease-in-out;
   }
   
@@ -137,7 +140,8 @@
   
 @media (min-width: 1024px) {
   .order {
-    width: 300px;
+    position: relative;
+    left: 0;
   }
   
   .wrapper {

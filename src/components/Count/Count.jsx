@@ -1,4 +1,3 @@
-// import { useState } from 'react';
 import style from './Count.module.css';
 import { useDispatch } from 'react-redux';
 import { addProduct, removeProduct } from '../../store/order/orderSlice';
@@ -14,8 +13,6 @@ export const Count = ({count, id}) => {
     const removeCount = () => {
         dispatch(removeProduct({ id }));
     }
-
-
 
     return  (
         <div className={style.count}>
